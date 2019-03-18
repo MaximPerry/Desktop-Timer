@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+        <title>Electron Sample theme</title>
+    </head>
+    <body>
+        <!-- Main content goes here -->
+        <div id="windowNav">
+            <p>Work chrono</p>
+            <button onclick="window.close()"><img src="assets/icons/window icons/Windows 8, 10/white/windowClose.png" alt=""></button>
+        </div>
+
+        <div id="main-content">
+            <br>
+            <h1 id="timer"><span id="hours">0</span>:<span id="min">00</span></h1>
+            <p id="seconds">00</p>
+            <br>
+            <button onclick="go();"><img id="button-img" src="assets/icons/start.svg" alt="Start counter"></button>
+        </div>
+        <script type="text/javascript" src="assets/scripts/background.js"></script>
+    </body>
+</html>
