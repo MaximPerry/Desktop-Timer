@@ -1,7 +1,7 @@
 {
-  "name": "appname",
-  "productName": "App Name",
-  "description": "App Description for Windows'Control Panel",
+  "name": "desktoptimer",
+  "productName": "Desktop Timer",
+  "description": "Desktop Timer",
   "version": "0.0.1",
   "main": "main.js",
   "devDependencies": {
@@ -10,8 +10,7 @@
     "electron-winstaller": "^2.6.4"
   },
   "scripts": {
-    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/MacOSX.icns --prune=true --out=release-builds",
-    "package-win": "electron-packager . app-name --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/Windows.ico --prune=true --out=release-builds --version-string.CompanyName=COMPANY_NAME --version-string.FileDescription=FILE_DESCRIPTION --version-string.ProductName=\"App Name\"",    
-    "package-linux": "electron-packager . app-name --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/Linux.png --prune=true --out=release-builds"
+    "compile": "electron-packager . FacebookCamouflage --overwrite --asar=true --platform=win32 --arch=ia32 --icon=icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"FB Camouflage\"",
+    "create-installer-win": "node installers/windows/createinstaller.js"
   }
 }
