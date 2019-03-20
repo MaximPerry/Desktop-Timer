@@ -10,13 +10,13 @@ var mainWindow;
 var rawdata;
 var winProp; 
 
-try {
-    rawdata = fs.readFileSync('resources/app/assets/config.json'); 
+try { //for builts
+    rawdata = fs.readFileSync('resources/app/config.json'); 
     winProp = JSON.parse(rawdata);
     app.on('ready', createWindow);
 
-} catch (er) {
-    rawdata = fs.readFileSync('assets/config.json');
+} catch (er) { //for development
+    rawdata = fs.readFileSync('config.json');
     winProp = JSON.parse(rawdata);
     app.on('ready', createWindow);
 }
