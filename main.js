@@ -1,12 +1,27 @@
 var electron = require('electron');
 var fs = require('fs');
+var path = require('path');
 var app = electron.app;
 var BrowserWindow = electron.BrowserWindow;
 
 var mainWindow;
 
-var rawdata = fs.readFileSync('winProperties.json');  
-var winProp = JSON.parse(rawdata);
+//const configFile = path.join(path.dirname(__dirname), 'Desktop Timer', 'config.json');
+var rawdata;
+var winProp; 
+
+try {
+    rawdata = fs.readFileSync('resources/app/assets/config.json'); 
+    winProp = JSON.parse(rawdata);
+    app.on('ready', createWindow);
+
+} catch (er) {
+    rawdata = fs.readFileSync('assets/config.json');
+    winProp = JSON.parse(rawdata);
+    app.on('ready', createWindow);
+}
+
+//var winProp = JSON.parse(rawdataBuild);
 
 function createWindow () {
     mainWindow = new BrowserWindow({ 
@@ -51,7 +66,7 @@ function createWindow () {
     });
 }
 
-app.on('ready', createWindow);
+//app.on('ready', createWindow);
 
 app.on('window-all-closed', function () {
     if (process.platform != 'darwin') {
