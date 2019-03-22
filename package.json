@@ -2,18 +2,15 @@
   "name": "desktoptimer",
   "productName": "Desktop Timer",
   "description": "Desktop Timer",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "main.js",
   "devDependencies": {
     "electron": "^1.7.10",
     "electron-packager": "^8.7.2",
     "electron-winstaller": "^2.7.0"
   },
-  "build": {
-    "files": ["**/*", "assets/**/*"]
-  }, 
   "scripts": {
-    "compile": "electron-packager . FacebookCamouflage --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Desktop Timer\"",
+    "compile": "electron-packager . DesktopTimer --overwrite --asar --platform=win32 --arch=ia32 --icon=assets/icons/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=desktoptimer --version-string.ProductName=\"Desktop Timer\"",
     "create-installer-win": "node installers/windows/createinstaller.js"
   }
 }
