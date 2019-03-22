@@ -14,13 +14,13 @@ function getInstallerConfig () {
   const outPath = path.join(rootPath, 'release-builds')
 
   return Promise.resolve({
-    appDirectory: path.join(outPath, 'FacebookCamouflage-win32-ia32/'),
+    appDirectory: path.join(outPath, 'DesktopTimer-win32-ia32/'),
     authors: 'Maxim Perry',
     noMsi: true,
     //iconUrl: "",
     outputDirectory: path.join(outPath, 'windows-installer'),
-    exe: 'FacebookCamouflage.exe',
-    setupExe: 'FbCamouflage.exe',
+    exe: 'DesktopTimer.exe',
+    setupExe: 'DesktopTimer.exe',
     setupIcon: path.join(rootPath, 'assets', 'icons', 'icon.ico')
   })
 }

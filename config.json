@@ -21,7 +21,7 @@
     "fullscreen" : false,
     "skipTaskbar" : false,
     "kiosk" : false,
-    "title" : "AppName",
+    "title" : "Desktop Timer",
     "acceptFirstMouse" : false,
     "autoHideMenuBar" : false,
     "hasShadow" : true,
