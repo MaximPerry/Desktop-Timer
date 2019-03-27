@@ -1,5 +1,4 @@
 # Desktop-Timer
-Simple Desktop Timer Widget
 
 ## Description
 Welcome!
@@ -9,7 +8,7 @@ Desktop-Timer is a desktop widget that simply serves as a timer. Functionalities
 This program was made with [Node.js](https://nodejs.org/en/) using the [Electron.js API](https://electronjs.org/).
 
 ## Download
-A first stable build is currently being worked on. Come back soon!
+[Download latest version](https://github.com/MaximPerry/Desktop-Timer/raw/master/release-builds/windows-installer/DesktopTimer.exe)
 
 ## Contributing
 If you're interested in contributing to Desktop-Timer, here is what you'll need.
