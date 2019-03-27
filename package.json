@@ -2,7 +2,7 @@
   "name": "desktoptimer",
   "productName": "Desktop Timer",
   "description": "Desktop Timer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "main.js",
   "devDependencies": {
     "electron": "^1.7.10",
