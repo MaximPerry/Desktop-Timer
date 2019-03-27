@@ -10,7 +10,7 @@
     "electron-winstaller": "^2.7.0"
   },
   "scripts": {
-    "compile": "electron-packager . DesktopTimer --overwrite --asar --all --icon=assets/icons/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=desktoptimer --version-string.ProductName=\"Desktop Timer\"",
+    "compile": "electron-packager . DesktopTimer --overwrite --asar --platform=win32 --arch=ia32 --icon=assets/icons/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=desktoptimer --version-string.ProductName=\"Desktop Timer\"",
     "create-installer-win": "node installers/windows/createinstaller.js"
   }
 }
