@@ -7,6 +7,10 @@ var hours = 00;
 var counting = false;
 var time;
 
+//For styling
+var frame = document.getElementById("main-content");
+console.log("frame");
+
 //Button
 var buttonImg = document.getElementById("button-img");
 

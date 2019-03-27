@@ -1,3 +1,9 @@
 # Ignore folder named `node_modules`
 node_modules/
+release-builds/DesktopTimer-linux-arm64/
+release-builds/DesktopTimer-linux-armv7l/
+release-builds/DesktopTimer-linux-ia32/
+release-builds/DesktopTimer-linux-mips64el/
+release-builds/DesktopTimer-linux-x64/
 release-builds/DesktopTimer-win32-ia32/
+release-builds/DesktopTimer-win32-x64/

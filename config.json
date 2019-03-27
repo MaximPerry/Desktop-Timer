@@ -3,7 +3,7 @@
     "height": 200,
     "frame": false,
     "windows10Frame": true,
-    "resizable": false,
+    "resizable": true,
     "transparent": false,
     "icon" : "assets/icons/Linux.png",
     "minWidth" : 200,
